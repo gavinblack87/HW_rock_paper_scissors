@@ -8,6 +8,14 @@ get '/' do
   erb(:home)
 end
 
+get '/how_to_play' do
+  erb(:how_to_play)
+end
+
+get '/result' do
+  erb(:result)
+end
+
 get '/check_win/:hand1/:hand2' do
   hand1 = params[:hand1]
   hand2 = params[:hand2]
